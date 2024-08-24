@@ -78,6 +78,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <hr className="border-1 mt-10 opacity-85 rounded-full"/>
     </div>
   );
 }
