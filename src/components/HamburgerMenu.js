@@ -139,7 +139,7 @@ export default function Headers() {
           >
             Contact
           </Link>
-          <button className='bg-custom-gradient p-3 rounded-3xl transitions-all transform hover:scale-105'>
+          <button className='bg-custom-gradient p-3 rounded-3xl transitions-all transform hover:scale-105 text-white'>
             Connect With Me
           </button>
         </div>
