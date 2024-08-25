@@ -48,7 +48,7 @@ export default function Headers() {
               duration={500}
               className="transitions-all transform hover:scale-110 cursor-pointer"
             >
-              Works
+              Experiences
             </Link>
           </div>
           <Link

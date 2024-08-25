@@ -12,11 +12,16 @@ export default function Footer() {
 
         <div className="flex flex-col mb-6">
           <img src={logo} alt="logo" className="w-1/4 bg-transparent" />
-          <h3 className="font-medium text-base">
-            I am a frontend developer from California, <br />
-            USA with 10 years of experience in multiple companies like
-            Microsoft, Tesla and Apple.
-          </h3>
+          <h3 className="font-medium text-lg py-5 text-white opacity-90 max-md:p-5">
+        I am a frontend developer from Antalya, Türkiye with 2 years of <br/>
+        experience in multiple companies like{" "}
+        <a
+          className="font-semibold text-xl py-5 text-white opacity-90 hover:text-black"
+          href="https://www.softalya.com/tr"
+        >
+          Softalya Software Inc.
+        </a>
+      </h3>
         </div>
 
         <div className="flex justify-between items-center">

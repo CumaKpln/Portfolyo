@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; // Hamburger ve kapatma ikonları için
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import logo from "../images/logo.jpg";
 
 export default function Headers() {
@@ -15,8 +15,8 @@ export default function Headers() {
       <div className='flex justify-between items-center font-semibold text-white py-5'>
         <img src={logo} alt="logo" className='w-1/6' />
 
-        
-        <div className='hidden md:flex gap-x-12 '>
+        {/* Desktop Menu */}
+        <div className='hidden md:flex gap-x-12'>
           <Link
             to="home"
             spy={true}
@@ -83,14 +83,14 @@ export default function Headers() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className='md:hidden flex flex-col gap-y-4 mt-4 text-center'>
+        <div className='md:hidden flex flex-col gap-y-4 mt-4 text-center bg-gray-800 border border-gray-700 rounded-lg p-4 shadow-lg'>
           <Link
             to="home"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
             onClick={toggleMenu}
           >
             Home
@@ -101,7 +101,7 @@ export default function Headers() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
             onClick={toggleMenu}
           >
             About Me
@@ -112,7 +112,7 @@ export default function Headers() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
             onClick={toggleMenu}
           >
             Services
@@ -123,10 +123,10 @@ export default function Headers() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
             onClick={toggleMenu}
           >
-            Portfolio
+            Experiences
           </Link>
           <Link
             to="contact"
@@ -134,7 +134,7 @@ export default function Headers() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
             onClick={toggleMenu}
           >
             Contact
