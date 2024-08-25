@@ -7,8 +7,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-2 mt-10 text-white   justify-between max-md:container max-md:mx-auto max-md:grid-cols-1">
+    <div className="container mx-auto p-8">
+      <div className="grid grid-cols-2 mt-10 text-white   justify-between max-md:grid-cols-1">
 
         <div className="flex flex-col mb-6">
           <img src={logo} alt="logo" className="w-1/4 bg-transparent" />

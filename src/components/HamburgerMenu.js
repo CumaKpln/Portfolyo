@@ -16,14 +16,14 @@ export default function Headers() {
         <img src={logo} alt="logo" className='w-1/6' />
 
         
-        <div className='hidden md:flex gap-x-12'>
+        <div className='hidden md:flex gap-x-12 '>
           <Link
             to="home"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
           >
             Home
           </Link>
@@ -33,7 +33,7 @@ export default function Headers() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
           >
             About Me
           </Link>
@@ -43,7 +43,7 @@ export default function Headers() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
           >
             Services
           </Link>
@@ -53,9 +53,9 @@ export default function Headers() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
           >
-            Portfolio
+            Works
           </Link>
           <Link
             to="contact"
@@ -63,7 +63,7 @@ export default function Headers() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="transitions-all transform hover:scale-110 cursor-pointer"
+            className="transitions-all transform hover:scale-110 cursor-pointer text-white"
           >
             Contact
           </Link>

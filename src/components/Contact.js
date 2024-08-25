@@ -9,7 +9,7 @@ export default function Contact() {
       <h1 className="text-6xl font-semibold text-white text-center my-20">
         Get in touch
       </h1>
-      <div className="grid grid-cols-2  max-md:grid-cols-1 max-md:gap-y-5 max-md:container max-md:mx-auto">
+      <div className="grid grid-cols-2  max-md:grid-cols-1 max-md:gap-y-5 max-md:container p-8">
         <div className="">
           <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#DF8908]  to-[#B415FF] text-5xl font-semibold mb-5 ">
             Let's talk
