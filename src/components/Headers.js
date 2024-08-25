@@ -1,18 +1,75 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-scroll";
+import logo from "../images/logo.jpg";
+import HamburgerMenu from "./HamburgerMenu";
 
 export default function Headers() {
   return (
-   <div className='container mx-auto'>
-     <div className=' flex justify-between items-center font-semibold  text-white py-5'>
-      <a className='text-3xl' href="#">🅲🆄🅼🅰</a>
-      <div className='flex gap-x-12'>
-        <a href='#Home' className='transitions-all transform hover:scale-110'>Home</a>
-        <a href='#AboutMe' className='transitions-all transform hover:scale-110'>About Me</a>
-        <a href='#Services' className='transitions-all transform hover:scale-110'>Services</a>
-        <a href='#Works' className='transitions-all transform hover:scale-110'>Portfolio</a>
+    <div className="container mx-auto">
+      <div className="hidden md:block">
+        <div className=" justify-between items-center font-semibold text-white py-5 flex">
+          <img src={logo} alt="logo" className="w-1/6" />
+          <div className="flex gap-x-12">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="transitions-all transform hover:scale-110 cursor-pointer"
+            >
+              Home
+            </Link>
+            <Link
+              to="aboutme"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="transitions-all transform hover:scale-110 cursor-pointer"
+            >
+              About Me
+            </Link>
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="transitions-all transform hover:scale-110 cursor-pointer"
+            >
+              Services
+            </Link>
+            <Link
+              to="works"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="transitions-all transform hover:scale-110 cursor-pointer"
+            >
+              Works
+            </Link>
+          </div>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="transitions-all transform hover:scale-110 cursor-pointer"
+          >
+            <button className="bg-custom-gradient p-3 rounded-3xl transitions-all transform hover:scale-105">
+              Connect With Me
+            </button>
+          </Link>
+        </div>
       </div>
-      <button className='bg-custom-gradient p-3 rounded-3xl transitions-all transform hover:scale-105'>Connect With Me</button>
+      <div className="md:hidden block ">
+        <div className="px-5">
+          <HamburgerMenu />
+        </div>
+      </div>
     </div>
-   </div>
-  )
+  );
 }

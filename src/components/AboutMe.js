@@ -2,15 +2,13 @@ import Hero from "../images/hero.jpg";
 
 export default function AboutMe() {
   return (
-    <div className="container mx-auto  ">
+    <div className="container mx-auto my-40">
       <h1 className="text-6xl font-semibold text-white text-center my-10 opacity-90">
         About me
       </h1>
-      <div class="grid grid-cols-3 gap-4">
-        <div className="">
-          <img src={Hero} className="w-96 h-auto rounded-2xl" alt="" />
-        </div>
-        <div class="col-span-2 about-para">
+      <div class="grid grid-cols-3 gap-3 max-md:grid-cols-1 ">
+          <img src={Hero} className="w-96 h-auto rounded-2xl max-md:container max-md:max-w-lg max-md:p-5" alt="" />
+        <div class="col-span-2 about-para max-md:p-5">
           <h3 className="text-lg font-semibold text-white">
             "I am a skilled Frontend Developer with 2 years of professional
             experience. Throughout my career, I have had the opportunity to
