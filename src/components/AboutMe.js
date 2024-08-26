@@ -7,15 +7,18 @@ export default function AboutMe() {
         About me
       </h1>
       <div class="grid grid-cols-3 gap-3 max-md:grid-cols-1 ">
-          <img src={Hero} className="w-96 h-auto rounded-2xl max-md:container max-md:max-w-lg max-md:p-5" alt="" />
+        <img
+          src={Hero}
+          className="w-96 h-auto rounded-2xl max-md:container max-md:max-w-lg max-md:p-5"
+          alt=""
+        />
         <div class="col-span-2 about-para max-md:p-5">
           <h3 className="text-lg font-semibold text-white">
-            "I am a skilled Frontend Developer with 2 years of professional
-            experience. Throughout my career, I have had the opportunity to
-            collaborate with respected organizations, contributing to their
-            success. My expertise is not only reflected in my technical
-            knowledge but also in the passion and dedication I bring to each
-            project."
+            I have been a freelance React JS developer for 2 years. I create
+            interfaces with HTML CSS and JavaScript. I am curious about
+            technology and open to continuous learning. I make it a principle to
+            write clean code. My aim is to improve myself by providing
+            impressive solutions in projects.
           </h3>
           <br />
           <h3 className="text-lg font-semibold text-white">
